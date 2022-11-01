@@ -13,7 +13,8 @@ class TransferRepos:
     def __init__(self, token, username, transfer_to):
         '''Initialize the class variables'''
         _BASE_URL = "https://api.github.com/{ext}"
-        self.phrase = "react-hooks-components-basics " #specify the repository keyword you wanna transfer
+        self.phrase =""
+        # self.phrase = "react-hooks-components-basics " #specify the repository keyword you wanna transfer
         self._username = username
         self._transfer_to = transfer_to
 
@@ -39,7 +40,7 @@ class TransferRepos:
         This method returns a list of repositories you want to move
         It calls the GitHub Get repos API given the phrase and your username
         '''
-        phrase="phase-3-methods"
+        phrase="phase-3-methods" #specify the name of the repository
         base_url = f"https://api.github.com/users/{username}/repos?per_page=1000"
         url = request.Request(base_url, method='GET')
 
