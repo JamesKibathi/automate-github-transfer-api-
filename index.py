@@ -108,9 +108,9 @@ class TransferRepos:
 
 ''' Creating an Instance of your class and giving the object actual values'''
 
-tkn = "ghp_v6k5m2K7FOdYyqdZ17VY9H" #insert your GitHub Token
-from_user = "kilonzif" #insert your GitHub Username
-new_owner = "FlatironMoringa" #insert your new organization to transfer to 
+tkn = "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" #insert your GitHub Token
+from_user = "JamesKibathi" #insert your GitHub Username
+new_owner = "MoringaFlatiron" #insert your new organization to transfer to 
 
 
 trans= TransferRepos(tkn,from_user,new_owner)
